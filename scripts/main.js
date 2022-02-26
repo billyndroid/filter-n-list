@@ -2,6 +2,7 @@
 let filterInput = document.getElementById("filterInput");
 //event listener
 filterInput.addEventListener("keyup", filterNames);
+//remember to add filterNames function back above when finished
 
 function filterNames() {
     //get input value
@@ -22,11 +23,6 @@ function filterNames() {
     }
 }
 
-
-//add name to list using a form
-let arr = document.getElementsByTagName("li"); {
-    console.log(arr);
-}
 
 //remove name from list
 //hide list headers if first letter doesn't match
