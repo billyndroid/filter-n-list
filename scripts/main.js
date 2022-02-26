@@ -21,3 +21,13 @@ function filterNames() {
         }
     }
 }
+
+
+//add name to list using a form
+let arr = document.getElementsByTagName("li"); {
+    console.log(arr);
+}
+
+//remove name from list
+//hide list headers if first letter doesn't match
+//onclick open profile page of that person
