@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
     <link rel="stylesheet" href="styles/style.css">
     <title>FiltRate</title>
 </head>
@@ -18,7 +20,7 @@
             FiltRate
         </h1>
         <h2 class="center-align">
-            The Filterable List App
+            The Filterable List Application
         </h2>
     </heaeder>
     <main class="">
@@ -42,6 +44,12 @@
                 </li>
                 <li class="collection-item">
                     <a href="#">Alexa</a>
+                </li>
+                <li class="collection-item avatar">
+                    <img src="images/yuna.jpg" alt="" class="circle">
+                    <div>Alvin<a href="#!" class="secondary-content">
+                        <i class="material-icons">send</i></a>
+                    </div>
                 </li>
 
                     <li class="collection-header">
@@ -445,7 +453,7 @@
 
     </main>
     <section>
-    <div class="flex-container">
+    <div class="flex-container" class="z-depth-2">
         <div id="hidden" class="cards">
 
             <div class="row">
@@ -506,12 +514,24 @@
         </div>
 
     </div>
+<!--(((((((((((((((Modal)))))))))))))))-->
+   <div>
+       <button id="modalBtn" class="button">Click Here</button>
+   <div id="simpleModal" class="modal">
+       <div class="modal-content">
+           <span class="closeBtn">&times;</span>
+           <p>I am a modal</p>
+
+       </div>
+   </div>
+   </div>
 </section>
     <footer>
 
     </footer>
     <script src="scripts/main.js"></script>
     <script src="scripts/hide-h5.js"></script>
-
+    <script src="scripts/popup-card.js"></script>
+    <script src="scripts/modal.js"></script>
 </body>
 </html>

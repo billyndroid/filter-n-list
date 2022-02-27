@@ -1,6 +1,110 @@
+body {
+    font-family: poppins, Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    
+}
+h1 {
+    font-size: 4rem;
+    color: rgb(19, 19, 19);
+}
+h2 {
+    font-size: 3rem;
+    color: rgb(68, 68, 68);
+}
+h3 {
+    font-size: 2rem;
+    color: #333;
+}
+.button {
+    background: coral;
+    padding: 1rem, 2rem;
+    border: 0;
+    color: #fff;
+}
+.button:hover {
+    background: #333;
+}
+.modal {
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+
+}
 .flex-container {
-    display: flex;
+    display: grid;
     flex-direction: row;
     align-items: center;
     justify-content: left;
 }
+/* card styling*/
+.card {
+    display: grid;
+}
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  .popup.active{
+  color: red;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+  /*modal styling*/
