@@ -4,9 +4,14 @@ body {
     
 }
 h1 {
-    font-size: 4rem;
-    color: rgb(19, 19, 19);
+    font-size: 6rem;
+    color: #fdbb2d;
     font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+}
+#ilt {
+  font-weight: 400;
+  color: antiquewhite;
 }
 @keyframes h1-animation {        
     from {
@@ -24,10 +29,16 @@ h1 {
     animation: my-animation 2s ease;
   }
   
- 
+#gradient {
+  padding-top: 3rem;
+  padding-bottom: 8rem;
+  background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(25,118,210,1) 0%, rgba(0,212,255,1) 100%); 
+}
 h2 {
     font-size: 3rem;
-    color: rgb(68, 68, 68);
+    color:antiquewhite;
+    color: linear-gradient(315deg, rgba(68,68,68,1) 0%, rgba(255,255,255,1) 100%); 
 }
 h3 {
     font-size: 2rem;
