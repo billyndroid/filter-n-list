@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/style.css">
     <title>FiltRate</title>
@@ -14,7 +14,7 @@
 <body>
     <heaeder>
         <nav>
-            <div class="nav-wrapper">
+            <div class="nav-wrapper" class="card-panel teal lighten-2">
               <a href="#" class="brand-logo right">Logo</a>
               <ul id="nav-mobile" class="left hide-on-med-and-down">
                 <li><a href="sass.html">Sass</a></li>
@@ -23,11 +23,11 @@
               </ul>
             </div>
           </nav>
-        <h1 class="center-align">
+        <h1 id="titleEffect" class="center-align" class="run-animation">
             FiltRate
         </h1>
         <h2 class="center-align">
-            The Filterable List Application
+            The <span id="titleRoll">Filterable</span> List Application
         </h2>
     </heaeder>
     <main class="">
@@ -46,22 +46,22 @@
                 <li class="collection-header">
                     <h5>A</h5>
                 </li>
-                <li class="collection-item">
+                <li class="collection-item avatar">
                     <a href="#card-one">Adam</a>
                 </li>
-                <li class="collection-item">
+                <li class="collection-item avatar">
                     <a href="#card-two">Alice</a>
                 </li>
-                <li class="collection-item">
+                <li class="collection-item avatar">
                     <a href="#card-three">Arnold</a>
                 </li>
-                <li class="collection-item">
+                <li class="collection-item avatar">
                     <a href="#">Alexa</a>
                 </li>
                 <li class="collection-item avatar">
                     <img src="/assets/profile-pic-2.png" alt="contact-avatar" class="circle">
                     <div>Alvin<a href="#" class="secondary-content">
-                        <i class="material-icons">send</i></a>
+                        <i class="material-icons">open_in_full</i></a>
                     </div>
                 </li>
 
@@ -528,7 +528,7 @@
 
     </div>
 <!--(((((((((((((((Modal)))))))))))))))-->
-   <div>
+   <!--<div>
        <button id="modalBtn" class="button">Click Here</button>
    <div id="simpleModal" class="modal">
        <div class="modal-content">
@@ -537,7 +537,7 @@
 
        </div>
    </div>
-   </div>
+   </div>-->
 </section>
     <footer>
 
@@ -546,5 +546,11 @@
     <script src="scripts/hide-h5.js"></script>
     <script src="scripts/popup-card.js"></script>
     <script src="scripts/modal.js"></script>
+    <!--    
+        <script src="scripts/title-roll.js"></script>
+    -->
+    <script src="scripts/title-animation.js"></script>
+
+
 </body>
 </html>
