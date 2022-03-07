@@ -4,8 +4,8 @@ var SpeechGrammarList = window.SpeechGrammarList || webkitSpeechGrammarList;
 var SpeechRecognitionEvent = window.SpeechRecognitionEvent || webkitSpeechRecognitionEvent;
 
 //the grammar that the application will respond to
-var colors = [ 'aqua' , 'azure' , 'beige', 'bisque', 'black', 'blue', 'brown', 'chocolate', 'coral' ];
-var grammar = '#JSGF V1.0; grammar colors; public <color> = ' + colors.join(' | ') + ' ;'
+var colors = [ 'aqua' , 'azure' , 'beige', 'bisque', 'black', 'blue', 'brown', 'chocolate', 'coral', 'red', 'green', 'pink', 'purple', ];
+var grammar = '#JSGF V1.0; grammar colors; public <color> = ' + colors.join(' | ') + ' ;';
 
 //plugging grammar into speech recognition 
 var recognition = new SpeechRecognition();
@@ -36,7 +36,7 @@ hints.innerHTML = 'Tap/click then say a color to change the background color of 
 document.body.onclick = function() {
   recognition.start();
   console.log('Ready to receive a color command.');
-}
+};
 
 //receiving and handing results
 recognition.onresult = function(event) {
@@ -44,20 +44,20 @@ recognition.onresult = function(event) {
     diagnostic.textContent = 'Result received: ' + color + '.';
     bg.style.backgroundColor = color;
     console.log('Confidence: ' + event.results[0][0].confidence);
-  }
+  };
 
   //stopping the speech recognition function
   recognition.onspeechend = function() {
     recognition.stop();
-  }
+  };
 
   //error handling - speech not regognised in grammar
   recognition.onnomatch = function(event) {
     diagnostic.textContent = 'I didn\'t recognize that color.';
-  }
+  };
 
     //errpr handling faoiure of recpgnition
   recognition.onerror = function(event) {
     diagnostic.textContent = 'Error occurred in recognition: ' + event.error;
-  }
+  };
   
