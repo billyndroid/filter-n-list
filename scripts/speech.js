@@ -4,7 +4,7 @@ var SpeechGrammarList = window.SpeechGrammarList || webkitSpeechGrammarList;
 var SpeechRecognitionEvent = window.SpeechRecognitionEvent || webkitSpeechRecognitionEvent;
 
 //the grammar that the application will respond to
-var colors = [ 'aqua' , 'azure' , 'beige', 'bisque', 'black', 'blue', 'brown', 'chocolate', 'coral' ... ];
+var colors = [ 'aqua' , 'azure' , 'beige', 'bisque', 'black', 'blue', 'brown', 'chocolate', 'coral' ];
 var grammar = '#JSGF V1.0; grammar colors; public <color> = ' + colors.join(' | ') + ' ;'
 
 //plugging grammar into speech recognition 
@@ -51,7 +51,7 @@ recognition.onresult = function(event) {
     recognition.stop();
   }
 
-  //errpr handling - speech not regognised in grammar
+  //error handling - speech not regognised in grammar
   recognition.onnomatch = function(event) {
     diagnostic.textContent = 'I didn\'t recognize that color.';
   }
